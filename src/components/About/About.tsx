@@ -4,10 +4,10 @@ import About3 from '../../assets/Hopepoint3.png'
 const About = () => {
     return (
         <>
-            <section className="flex min-h-screen">
+            <section className="flex min-h-screen desktop:mt-0">
                 <div className="container flex flex-1 px-6 py-16 mx-auto justify-start">
                     <div className="flex w-full desktop:flex-row laptop:flex-row tablet:flex-col flex-col">
-                        <div className="w-full tablet:w-[90%] px-4 lg:w-6/12">
+                        <div className="w-full tablet:w-[75%] px-4 lg:w-6/12">
                             <div className="flex items-center -mx-3 sm:-mx-4">
                                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                                     <div className="py-3 sm:py-4">
@@ -607,17 +607,17 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="mx-28 w-[90%] px-4 lg:w-1/2 xl:w-5/12  flex-grow text-left">
+                        <div className="desktop:mx-28 mx-0 phone:w-full w-[90%] px-4 lg:w-1/2 xl:w-5/12 desktop:text-left">
                             <div className="mt-10 lg:mt-0">
                                 <span className="block mb-8 text-xl font-semibold text-[#FF3230]">
                                     Why Choose Us
                                 </span>
-                                <h2 className="mb-5 text-3xl font-bold text-dark  sm:text-[40px]/[48px]">
+                                <h2 className="mb-5 desktop:text-3xl font-bold text-dark  phone:text-2xl">
                                     Choose Hopepoint, Choose Hope for the Planet
                                 </h2>
-                                <p className="mb-5 text-lg font-light  ">
+                                <p className="mb-5 phone:text-base desktop:text-lg font-light  ">
                                     Imagine a future where clean air is the norm, not the exception. Where children play without fear of inhaling toxins. That's the future we're working towards, one delivery at a time.        </p>
-                                <p className="mb-8 text-lg font-light ">
+                                <p className="mb-8 phone:text-base desktop:text-lg font-light ">
                                     Join us on this journey. Choose Hopepoint. Choose to be the change you wish to see in the world.
                                 </p>
                                 <a

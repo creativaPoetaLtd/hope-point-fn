@@ -3,7 +3,7 @@ import HeroImage from '../../assets/img/Hero.png';
 const Hero = () => {
     return (
         <>
-            <header className="flex min-h-screen">
+            <header className="flex min-h-min">
                 <div className="container flex flex-1 px-6 py-16 mx-auto justify-start">
                     <div className="flex w-full flex-col md:flex-row">
                         <div className="w-full md:w-[50%] flex-grow tablet:mt-[8%] text-left my-auto md:mt-10">
@@ -11,7 +11,7 @@ const Hero = () => {
                                 Fastest <span className="text-[#FF3230]">Grocery</span>  <br />
                                 <span className="text-[#FF3230]">Delivery </span>Delights
                             </h1>
-                            <p className="mt-8 text-[#000000] text-xl tablet:text-base desktop:w-[40%] tablet:w-[80%]  md:w-[50%] font-light">
+                            <p className="mt-8 text-[#000000] text-xl phone:text-base tablet:text-base desktop:text-xl desktop:w-[60%] tablet:w-[80%]  md:w-[50%] font-light">
                                 At the forefront of delivery innovation. HopePoint embraces
                                 cutting-edge solutions for a smarter, more efficient delivery
                                 experience.
@@ -20,8 +20,8 @@ const Hero = () => {
                                 Join us
                             </button>
                         </div>
-                        <div className="w-full tablet:w-[60%] desktop:w-[30%] md:w-[40%] flex-grow desktop:mt-[-2%] tablet:mt-[0%] my-auto">
-                            <img className="w-full h-full" src={HeroImage} alt="logo" />
+                        <div className="w-full tablet:w-[60%] md:w-[50%] flex-grow desktop:mt-[-2%] tablet:mt-[0%] my-auto">
+                            <img className="desktop:w-[80%] phone:w-[100%]" src={HeroImage} alt="logo" />
                         </div>
                     </div>
                 </div>

@@ -12,7 +12,7 @@ const Partnership = () => {
             <p className="mb-8 text-center text-[#7C7C7C] max-w-2xl mx-auto">
                 Lorem ipsum dolor sit amet consectetur. Nunc sed euismod ac egestas id. Suscipit et molestie ut dolor ut pellentesque elit.
             </p>
-            <div className="flex flex-wrap justify-center items-center  gap-4">
+            <div className="flex flex-wrap  justify-center items-center desktop:gap-4 phone:gap-3 ">
                 {/* Replace these placeholder elements with your actual image components */}
                 <div className="partner-card rounded-lg bg-[#8959B6] mb-4  bg-opacity-15 shadow-md w-44 h-16 p-2 flex flex-col items-center justify-center">
                     <img src={airtel} alt="Partner 1" className="object-cover mb-4" />
@@ -47,24 +47,24 @@ const Partnership = () => {
                 <div className="partner-card rounded-lg bg-[#8959B6] mb-4 bg-opacity-15 shadow-md w-44 h-16 p-2 flex flex-col items-center justify-center">
                     <img src={''} className="object-cover mb-4" />
                 </div>
-                {/* Add new partners here */}
             </div>
-
-            <button className="mt-8 inline-flex items-center px-4 py-2 text-[#FF3230] hover:text-white rounded-md hover:bg-[#FF3230] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 border border-[#FF3230]">
-                Read more
-                <svg
-                    className="w-4 h-4 ml-2 hover:text-white"
-                    fill="none"
-                    stroke="#FF3230"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path d="M9 5l7 7-7 7" />
-                </svg>
-            </button>
+            <div className='text-center'>
+                <button className="mt-8 inline-flex justify-center items-center px-4 py-2 text-[#FF3230] hover:text-white rounded-md hover:bg-[#FF3230] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 border border-[#FF3230]">
+                    Read more
+                    <svg
+                        className="w-4 h-4 ml-2 hover:text-white"
+                        fill="none"
+                        stroke="#FF3230"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
 
         </section>
     );

@@ -1,23 +1,25 @@
 import { useEffect, useState } from "react";
-
+import Testimonial1 from '../../assets/img/Testimonial1.png'
+import Testimonial2 from '../../assets/img/Testimonial2.png'
+import Testimonial3 from '../../assets/img/Testimonial3.png'
 const Testmonial = () => {
     const testimonials = [
         {
-            image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+            image: Testimonial1,
             title: 'Help us improve our productivity',
             content: 'Lorem ipsum dolor sit amet consectetur. Volutpat libero suspendisse facilisis neque imperdiet in. Faucibus consectetur urna morbi amet turpis ut tristique. Massa eleifend volutpat a amet facilisis duis. Vulputate tortor et eget augue donec lacus. ',
             author: 'Ronik Ederson',
             position: 'Marketing Manager at Stech.co',
         },
         {
-            image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+            image: Testimonial2,
             title: 'Help us improve our productivity',
             content: ' Lorem ipsum dolor sit amet consectetur. Volutpat libero suspendisse facilisis neque imperdiet in. Faucibus consectetur urna morbi amet turpis ut tristique. Massa eleifend volutpat a amet facilisis duis. Vulputate tortor et eget augue donec lacus. ',
             author: 'KANANURA Abdoul Khaliq',
             position: 'Marketing Manager at Stech.co',
         },
         {
-            image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+            image: Testimonial3,
             title: 'Help us improve our productivity',
             content: ' Lorem ipsum dolor sit amet consectetur. Volutpat libero suspendisse facilisis neque imperdiet in. Faucibus consectetur urna morbi amet turpis ut tristique. Massa eleifend volutpat a amet facilisis duis. Vulputate tortor et eget augue donec lacus. ',
             author: 'UWASE Pamella',
