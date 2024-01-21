@@ -22,7 +22,7 @@ const Testmonial = () => {
             image: Testimonial3,
             title: 'Help us improve our productivity',
             content: ' Lorem ipsum dolor sit amet consectetur. Volutpat libero suspendisse facilisis neque imperdiet in. Faucibus consectetur urna morbi amet turpis ut tristique. Massa eleifend volutpat a amet facilisis duis. Vulputate tortor et eget augue donec lacus. ',
-            author: 'UWASE Pamella',
+            author: 'Jane Doe',
             position: 'Marketing Manager at Stech.co',
         }
     ];
@@ -45,7 +45,7 @@ const Testmonial = () => {
     }, [currentTestimonial]);
 
     return (
-        <section className="testimonial-section">
+        <section id="Testimonial" className="testimonial-section">
             <div className="relative flex">
                 <div className="min-h-screen desktop:w-1/3"></div>
                 <div className="hidden w-3/4 min-h-screen rounded-md bg-gray-100 desktop:block transition-opacity duration-500"></div>

@@ -4,20 +4,20 @@ import About3 from '../../assets/Hopepoint3.png'
 const About = () => {
     return (
         <>
-            <section className="flex min-h-screen desktop:mt-0">
+            <section id='About' className="flex min-h-screen desktop:mt-0">
                 <div className="container flex flex-1 px-6 py-16 mx-auto justify-start">
                     <div className="flex w-full desktop:flex-row laptop:flex-row tablet:flex-col flex-col">
-                        <div className="w-full tablet:w-[75%] px-4 lg:w-6/12">
-                            <div className="flex items-center -mx-3 sm:-mx-4">
-                                <div className="w-full px-3 sm:px-4 xl:w-1/2">
-                                    <div className="py-3 sm:py-4">
+                        <div className="w-full tablet:w-[75%] px-4 desktop:w-6/12">
+                            <div className="flex items-center -mx-3 phone:-mx-4">
+                                <div className="w-full px-3 phone:px-4 xl:w-1/2">
+                                    <div className="py-3 phone:py-4">
                                         <img
                                             src={About3}
                                             alt=""
                                             className="w-full rounded-2xl"
                                         />
                                     </div>
-                                    <div className="py-3 sm:py-4">
+                                    <div className="py-3 phone:py-4">
                                         <img
                                             src={About2}
                                             alt=""
@@ -25,7 +25,7 @@ const About = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className="w-full px-3 sm:px-4 xl:w-1/2">
+                                <div className="w-full px-3 phone:px-4 xl:w-1/2">
                                     <div className="relative z-10 my-4">
                                         <img
                                             src={About1}
@@ -607,7 +607,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="desktop:mx-28 mx-0 phone:w-full w-[90%] px-4 lg:w-1/2 xl:w-5/12 desktop:text-left">
+                        <div className="desktop:mx-28 mx-0 phone:w-full w-[90%] px-4 desktop:w-1/2 xl:w-5/12 desktop:text-left">
                             <div className="mt-10 lg:mt-0">
                                 <span className="block mb-8 text-xl font-semibold text-[#FF3230]">
                                     Why Choose Us

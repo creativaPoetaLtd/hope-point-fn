@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Logo from '../../assets/img/Logo.svg';
+import { Link } from 'react-scroll';
 
-const DraftNav = () => {
+const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -9,10 +10,10 @@ const DraftNav = () => {
     };
 
     return (
-        <nav className="relative bg-white h-16 shadow">
+        <nav className="bg-white h-16 shadow fixed desktop:top-0 left-0 w-full z-10">
             <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
                 <div className="flex items-center justify-between">
-                    <a href="#">
+                    <a href="#Home">
                         <img className="w-auto desktop:h-10 tablet:h-7" src={Logo} alt="" />
                     </a>
                     <div className="flex desktop:hidden tablet:hidden">
@@ -39,15 +40,37 @@ const DraftNav = () => {
                         } md:opacity-100 md:translate-x-0`}
                 >
                     <div className="flex flex-col font-semibold text-xl md:flex-row desktop:mx-[-50%] md:mx-4">
-                        <a className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" href="#">
+                        <Link
+                            activeClass='active'
+                            to="Hero"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={900}
+                            className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" href="#Home">
                             Home
-                        </a>
-                        <a className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" href="#">
+                        </Link>
+                        <Link
+                            activeClass='active'
+                            to="About"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={900}
+                            className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" href="#Home">
                             About
-                        </a>
-                        <a className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" href="#">
+                        </Link>
+                        <Link
+                            activeClass='active'
+                            to="Testmonial"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={900}
+                            className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" href="#Home">
                             Services
-                        </a>
+                        </Link>
+
                         <a className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" href="#">
                             Contact
                         </a>
@@ -58,4 +81,4 @@ const DraftNav = () => {
     );
 };
 
-export default DraftNav;
+export default Navbar;
