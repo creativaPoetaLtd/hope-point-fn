@@ -1,6 +1,7 @@
 import About1 from '../../assets/Hopepoint1.png'
 import About2 from '../../assets/Hopepoint2.png'
 import About3 from '../../assets/Hopepoint3.png'
+import { Link } from 'react-router-dom';
 const About = () => {
     return (
         <>
@@ -25,7 +26,7 @@ const About = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className="w-full px-3 phone:px-4 xl:w-1/2">
+                                <div className="w-full px-3  phone:px-4 xl:w-1/2">
                                     <div className="relative z-10 my-4">
                                         <img
                                             src={About1}
@@ -620,12 +621,12 @@ const About = () => {
                                 <p className="mb-8 phone:text-base desktop:text-lg font-light ">
                                     Join us on this journey. Choose Hopepoint. Choose to be the change you wish to see in the world.
                                 </p>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/About"
                                     className="inline-flex items-center bg-[#FF3230] justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
                                 >
-                                    Get Started
-                                </a>
+                                    Read more
+                                </Link>
                             </div>
                         </div>
                     </div>

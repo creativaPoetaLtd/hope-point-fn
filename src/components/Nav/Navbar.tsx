@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Logo from '../../assets/img/Logo.svg';
 import { Link } from 'react-scroll';
-
+import { Link as RouterLink } from 'react-router-dom';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -10,12 +10,21 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-white h-16 shadow fixed desktop:top-0 left-0 w-full z-10">
+        <nav className="bg-white h-16 shadow fixed desktop:top-0 left-0 w-full mb-20">
             <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
                 <div className="flex items-center justify-between">
-                    <a href="#Home">
-                        <img className="w-auto desktop:h-10 tablet:h-7" src={Logo} alt="" />
-                    </a>
+                    <Link
+                        activeClass='active'
+                        to="/#Hero"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={900}
+                    >
+                        <RouterLink to="/">
+                            <img className="w-auto desktop:h-10 tablet:h-7" src={Logo} alt="" />
+                        </RouterLink>
+                    </Link>
                     <div className="flex desktop:hidden tablet:hidden">
                         <button
                             onClick={toggleMenu}
@@ -47,9 +56,12 @@ const Navbar = () => {
                             smooth={true}
                             offset={-70}
                             duration={900}
-                            className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" href="#Home">
-                            Home
+                            className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0">
+                            <RouterLink to="/">
+                                Home
+                            </RouterLink>
                         </Link>
+
                         <Link
                             activeClass='active'
                             to="About"
@@ -57,23 +69,23 @@ const Navbar = () => {
                             smooth={true}
                             offset={-70}
                             duration={900}
-                            className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" href="#Home">
+                            className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" >
                             About
                         </Link>
                         <Link
                             activeClass='active'
-                            to="Testmonial"
+                            to=""
                             spy={true}
                             smooth={true}
                             offset={-70}
                             duration={900}
-                            className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" href="#Home">
+                            className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" >
                             Services
                         </Link>
 
-                        <a className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" href="#">
+                        <RouterLink className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" to="#">
                             Contact
-                        </a>
+                        </RouterLink>
                     </div>
                 </div>
             </div>

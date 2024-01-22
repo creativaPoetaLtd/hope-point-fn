@@ -1,6 +1,10 @@
+import { useEffect } from 'react';
 import HeroImage from '../../assets/img/Hero.png';
 
 const Hero = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <>
             <header id='Hero' className="flex min-h-min">

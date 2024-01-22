@@ -10,10 +10,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Partnership />
-      <Testmonial />
+      <main>
+        <Hero />
+        <About />
+        <Partnership />
+        <Testmonial />
+      </main>
       <div className='w-full'>
         <Footer />
       </div>

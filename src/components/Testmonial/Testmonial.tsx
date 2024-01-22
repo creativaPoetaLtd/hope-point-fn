@@ -45,7 +45,7 @@ const Testmonial = () => {
     }, [currentTestimonial]);
 
     return (
-        <section id="Testimonial" className="testimonial-section">
+        <section id="Testmonial" className="testimonial-section">
             <div className="relative flex">
                 <div className="min-h-screen desktop:w-1/3"></div>
                 <div className="hidden w-3/4 min-h-screen rounded-md bg-gray-100 desktop:block transition-opacity duration-500"></div>
