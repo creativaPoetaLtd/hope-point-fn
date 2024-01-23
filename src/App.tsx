@@ -5,6 +5,7 @@ import About from './components/About/About'
 import Partnership from './components/Partner/Partner'
 import Testmonial from './components/Testmonial/Testmonial'
 import Footer from './components/Footer/Footer'
+import Locations from './components/Location/Locations'
 function App() {
 
   return (
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Partnership />
         <Testmonial />
+        <Locations />
       </main>
       <div className='w-full'>
         <Footer />

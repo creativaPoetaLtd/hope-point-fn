@@ -19,9 +19,9 @@ const OurStory = () => {
                     <div className="flex justify-center order-2 mt-6 laptop:mt-0 laptop:space-y-3 laptop:flex-col">
                         <button
                             onClick={() => scrollToSection(firstSectionRef)}
-                            className="w-3 h-3 mx-2 bg-[#FF3230] rounded-full laptop:mx-0 focus:outline-none"></button>
-                        <button onClick={() => scrollToSection(secondSectionRef)} className="w-3 h-3 mx-2 bg-gray-300 rounded-full laptop:mx-0 focus:outline-none hover:bg-blue-500"></button>
-                        <button onClick={() => scrollToSection(thirdSectionRef)} className="w-3 h-3 mx-2 bg-gray-300 rounded-full laptop:mx-0 focus:outline-none hover:bg-blue-500"></button>
+                            className="w-3 h-3 mx-2 bg-[#FF3230] rounded-full focus:outline-none"></button>
+                        <button onClick={() => scrollToSection(secondSectionRef)} className="w-3 h-3 mx-2 bg-gray-300 rounded-full  focus:outline-none hover:bg-blue-500"></button>
+                        <button onClick={() => scrollToSection(thirdSectionRef)} className="w-3 h-3 mx-2 bg-gray-300 rounded-full  focus:outline-none hover:bg-blue-500"></button>
                     </div>
 
                     <div className="max-w-lg laptop:mx-12 laptop:order-2">
@@ -45,9 +45,9 @@ const OurStory = () => {
                         <p className="mt-4 text-gray-600 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quia asperiores alias vero magnam recusandae adipisci ad vitae laudantium quod rem voluptatem eos accusantium cumque.</p>
                     </div>
                     <div className="flex justify-center order-2 mt-6 laptop:mt-0 laptop:space-y-3 laptop:flex-col">
-                        <button onClick={() => scrollToSection(firstSectionRef)} className="w-3 h-3 mx-2 bg-gray-300 rounded-full laptop:mx-0 focus:outline-none hover:bg-blue-500"></button>
-                        <button onClick={() => scrollToSection(secondSectionRef)} className="w-3 h-3 mx-2 bg-[#FF3230] rounded-full laptop:mx-0 focus:outline-none"></button>
-                        <button onClick={() => scrollToSection(thirdSectionRef)} className="w-3 h-3 mx-2 bg-gray-300 rounded-full laptop:mx-0 focus:outline-none hover:bg-blue-500"></button>
+                        <button onClick={() => scrollToSection(firstSectionRef)} className="w-3 h-3 mx-2 bg-gray-300 rounded-full  focus:outline-none hover:bg-blue-500"></button>
+                        <button onClick={() => scrollToSection(secondSectionRef)} className="w-3 h-3 mx-2 bg-[#FF3230] rounded-full  focus:outline-none"></button>
+                        <button onClick={() => scrollToSection(thirdSectionRef)} className="w-3 h-3 mx-2 bg-gray-300 rounded-full  focus:outline-none hover:bg-blue-500"></button>
                     </div>
                 </div>
                 <div className="flex items-center justify-center w-full h-96 laptop:w-1/2">
@@ -60,9 +60,9 @@ const OurStory = () => {
                 </div>
                 <div className="flex flex-col items-center w-full laptop:flex-row laptop:w-1/2">
                     <div className="flex justify-center order-2 mt-6 laptop:mt-0 laptop:space-y-3 laptop:flex-col">
-                        <button onClick={() => scrollToSection(firstSectionRef)} className="w-3 h-3 mx-2 bg-gray-300 rounded-full laptop:mx-0 focus:outline-none hover:bg-blue-500"></button>
-                        <button onClick={() => scrollToSection(secondSectionRef)} className="w-3 h-3 mx-2 bg-gray-300 rounded-full laptop:mx-0 focus:outline-none hover:bg-blue-500"></button>
-                        <button onClick={() => scrollToSection(thirdSectionRef)} className="w-3 h-3 mx-2 bg-[#FF3230] rounded-full laptop:mx-0 focus:outline-none"></button>
+                        <button onClick={() => scrollToSection(firstSectionRef)} className="w-3 h-3 mx-2 bg-gray-300 rounded-full  focus:outline-none hover:bg-blue-500"></button>
+                        <button onClick={() => scrollToSection(secondSectionRef)} className="w-3 h-3 mx-2 bg-gray-300 rounded-full  focus:outline-none hover:bg-blue-500"></button>
+                        <button onClick={() => scrollToSection(thirdSectionRef)} className="w-3 h-3 mx-2 bg-[#FF3230] rounded-full  focus:outline-none"></button>
                     </div>
 
                     <div className="max-w-lg laptop:mx-12 laptop:order-2">

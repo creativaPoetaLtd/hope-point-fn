@@ -4,7 +4,7 @@ import Footer from '../components/Footer/Footer'
 import AboutUs from '../components/AboutUs/AboutUs'
 // import FAQ from '../components/FAQ/FAQ'
 import Features from '../components/Features/Features'
-import Teams from '../components/Team/Teams'
+// import Teams from '../components/Team/Teams'
 import OurStory from '../components/OurStory/OurStory'
 
 const AboutPage = () => {
@@ -13,7 +13,6 @@ const AboutPage = () => {
     }, []);
     return (
         <>
-
             <div>
                 <Navbar />
             </div>
@@ -21,9 +20,7 @@ const AboutPage = () => {
                 <AboutUs />
                 <OurStory />
                 <Features />
-                <Teams />
-
-
+                {/* <Teams /> */}
             </main>
 
             <Footer />
