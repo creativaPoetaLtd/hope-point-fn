@@ -83,7 +83,7 @@ const Navbar = () => {
                             Services
                         </Link>
 
-                        <RouterLink className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" to="#">
+                        <RouterLink className="my-4 text-gray-900 transition-colors duration-300 transform hover:text-[#FF3230] md:mx-8 md:my-0" to="/Contact">
                             Contact
                         </RouterLink>
                     </div>
