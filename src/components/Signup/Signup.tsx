@@ -4,7 +4,7 @@ import SignupImage from '../../assets/img/signup.jpg';
 const Signup = () => {
     return (
         <div className=' '>
-            <div className="flex phone:mt-20 desktop:mt-40 w-full max-w-md mx-auto overflow-hidden bg-[#FFF5F5] rounded-lg shadow-lg  desktop:max-w-6xl">
+            <div className="flex phone:mt-20 desktop:mt-30 w-full max-w-md mx-auto overflow-hidden bg-[#FFF5F5] rounded-lg shadow-lg  desktop:max-w-6xl">
                 <div
                     className="hidden bg-cover desktop:block desktop:w-1/2"
                     style={{
