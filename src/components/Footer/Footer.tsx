@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="desktop:flex">
                     <div className="w-full -mx-6 desktop:w-2/5">
                         <div className="px-6">
-                            <Link to="#">
+                            <Link to="/">
                                 <img className="w-auto desktop:h-10 tablet:h-7 mb-8" src={Logo} alt="Logo" />
                             </Link>
                             <p className=" w-[70%] mt-2 text-[#000000]">Join 31,000+ other and never miss out on new tips, tutorials, and more.</p>

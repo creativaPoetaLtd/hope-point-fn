@@ -1,5 +1,21 @@
 const Locations = () => {
-    // Function to generate Google Maps link based on latitude and longitude
+    const locationsData = [
+        {
+            name: 'Hope Point Gisozi',
+            address: 'Rte de Lennik 806',
+            phone: '02 201 23 45',
+            hours: 'Open 24 hours',
+            coordinates: { latitude: -1.943725, longitude: 30.086548 }
+        },
+        {
+            name: 'Another Location',
+            address: '123 Main Street',
+            phone: '555-1234',
+            hours: '9 AM - 5 PM',
+            coordinates: { latitude: -2.0, longitude: 31.0 }
+        }
+    ];
+
     const generateGoogleMapsLink = (latitude: any, longitude: any) => {
         return `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
     };
@@ -7,40 +23,25 @@ const Locations = () => {
     return (
         <div className="flex min-h-min">
             <div className="container mt-8 mx-auto p-4">
-                <div className="flex flex-col gap-4">
-                    <div className="flex items-center justify-between p-4 border-b border-gray-200">
-                        <div>
-                            <p className="text-4xl phone:text-2xl font-semibold text-gray-800">Hope Point Gisozi</p>
-                            <p className="text-md mt-4 phone:text-sm text-gray-600">Rte de Lennik 806 02 201 23 45</p>
-                            <p className="text-md mt-2 text-gray-600">Open 24 hours</p>
+                {locationsData.map((location, index) => (
+                    <div key={index} className="flex flex-col gap-4">
+                        <div className="flex items-center justify-between p-4 border-b border-gray-200">
+                            <div>
+                                <p className="text-4xl phone:text-2xl font-semibold text-gray-800">{location.name}</p>
+                                <p className="text-md mt-4 phone:text-sm text-gray-600">{location.address} {location.phone}</p>
+                                <p className="text-md mt-2 text-gray-600">{location.hours}</p>
+                            </div>
+                            <a
+                                href={generateGoogleMapsLink(location.coordinates.latitude, location.coordinates.longitude)}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-red-500 text-white px-4 py-2 rounded-full"
+                            >
+                                Directions
+                            </a>
                         </div>
-                        <a
-                            href={generateGoogleMapsLink(-1.943725, 30.086548)} // Replace with actual coordinates
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-red-500 text-white px-4 py-2 rounded-full"
-                        >
-                            Directions
-                        </a>
                     </div>
-                </div>
-                <div className="flex flex-col gap-4">
-                    <div className="flex items-center justify-between p-4 border-b border-gray-200">
-                        <div>
-                            <p className="text-4xl phone:text-2xl font-semibold text-gray-800">Hope Point Gisozi</p>
-                            <p className="text-md mt-4 phone:text-sm text-gray-600">Rte de Lennik 806 02 201 23 45</p>
-                            <p className="text-md mt-2 text-gray-600">Open 24 hours</p>
-                        </div>
-                        <a
-                            href={generateGoogleMapsLink(-1.943725, 30.086548)} // Replace with actual coordinates
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-red-500 text-white px-4 py-2 rounded-full"
-                        >
-                            Directions
-                        </a>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     );
