@@ -22,7 +22,7 @@ const Locations = () => {
 
     return (
         <div className="flex min-h-min">
-            <div className="container mt-8 mx-auto p-4">
+            <div className="container desktop:mt-8 tablet:-mt-20 mx-auto p-4">
                 {locationsData.map((location, index) => (
                     <div key={index} className="flex flex-col gap-4">
                         <div className="flex items-center justify-between p-4 border-b border-gray-200">
