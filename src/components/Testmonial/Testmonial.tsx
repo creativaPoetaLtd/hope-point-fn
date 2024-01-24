@@ -46,9 +46,9 @@ const Testmonial = () => {
 
     return (
         <section id="Testmonial" className="testimonial-section">
-            <div className="relative flex">
+            <div className=" flex">
                 <div className="min-h-screen desktop:w-1/3"></div>
-                <div className="hidden w-3/4 min-h-screen rounded-md bg-gray-100 desktop:block transition-opacity duration-500"></div>
+                <div className="hidden w-[60%] min-h-screen rounded-md bg-gray-100 desktop:block transition-opacity duration-500"></div>
                 <div className="container flex flex-col text-left w-full min-h-screen px-6 py-10 mx-auto desktop:absolute desktop:inset-x-0 transition-opacity duration-500">
                     <h1 className="text-2xl font-semibold text-gray-800 capitalize desktop:text-3xl ">
                         What our <span className="text-[#FF3230]">customers</span> <br /> are saying

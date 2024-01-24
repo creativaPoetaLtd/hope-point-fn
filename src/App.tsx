@@ -6,6 +6,7 @@ import Partnership from './components/Partner/Partner'
 import Testmonial from './components/Testmonial/Testmonial'
 import Footer from './components/Footer/Footer'
 import Locations from './components/Location/Locations'
+import HowItWorks from './components/HowItWork/HowItWorks'
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <HowItWorks />
         <Partnership />
         <Testmonial />
         <Locations />
