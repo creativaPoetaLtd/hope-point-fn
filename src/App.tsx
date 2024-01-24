@@ -16,9 +16,9 @@ function App() {
         <Hero />
         <About />
         <HowItWorks />
+        <Locations />
         <Partnership />
         <Testmonial />
-        <Locations />
       </main>
       <div className='w-full'>
         <Footer />
