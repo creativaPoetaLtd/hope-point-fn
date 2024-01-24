@@ -8,7 +8,7 @@ import ContactPage from './pages/ContactPage.tsx'
 import LoginPage from './pages/LoginPage.tsx'
 import SignupPage from './pages/SignupPage.tsx'
 import BookingPage from './pages/BookingPage.tsx'
-import Dashboard from './pages/Dashboard/dashboard.tsx'
+import Dashboard from './pages/Dashboard/Dashboard.tsx'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Router>
