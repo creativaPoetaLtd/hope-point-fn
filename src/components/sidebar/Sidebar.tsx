@@ -5,7 +5,6 @@ import { RiSettings4Line } from "react-icons/ri";
 import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { CiLogout } from "react-icons/ci";
 import { IoIosLogOut } from "react-icons/io";
 
 import Logo from "../../assets/img/Logo.svg"; // Import your logo
@@ -64,7 +63,7 @@ const Sidebar = () => {
                     ))}
                 </div>
             </div>
-            {/* Main Content */}
+
             <div className="m-3 text-xl text-gray-900 font-semibold">Dashboard</div>
         </section>
     );
