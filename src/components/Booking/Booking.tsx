@@ -120,14 +120,14 @@ export const BookingForm = () => {
                         </div>
                         <div className='flex justify-between'>
                             <Link to='/booking'
-                                className="w-[40%] hover:shadow-form rounded-md border-2  border-[#FF3230] bg-white py-3 px-8 text-center text-base font-semibold text-gray-900 outline-none hover:bg-[#FF3230] hover:text-white"
+                                className="w-[40%] hover:shadow-form rounded-md border-2  border-[#FF3230] bg-white py-3 px-8 phone:px-2 text-center text-base font-semibold text-gray-900 outline-none hover:bg-[#FF3230] hover:text-white"
                             >
                                 Pick time
 
                             </Link>
 
                             <button
-                                className="w-[40%] hover:shadow-form rounded-md bg-[#FF3230] py-3 px-8 text-center text-base font-semibold text-white outline-none"
+                                className="w-[40%] hover:shadow-form rounded-md bg-[#FF3230] py-3 px-8 phone:px-2 text-center text-base font-semibold text-white outline-none"
                             >
                                 Book Now
                             </button>
