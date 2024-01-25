@@ -9,6 +9,7 @@ import LoginPage from './pages/LoginPage.tsx'
 import SignupPage from './pages/SignupPage.tsx'
 import BookingPage from './pages/BookingPage.tsx'
 import Dashboard from './pages/Dashboard/Dashboard.tsx'
+import { BookingForm } from './components/Booking/Booking.tsx'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Router>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="/Login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/booking" element={<BookingPage />} />
+        <Route path="/booking-form" element={<BookingForm />} />
         <Route path="/dashboard" element={<Dashboard />} />
 
       </Routes>

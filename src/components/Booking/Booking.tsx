@@ -1,11 +1,12 @@
+
+import { useState } from 'react';
 import Logo from "../../assets/img/Logo.svg"
 import { Link } from "react-router-dom";
-const Booking = () => {
+
+export const BookingForm = () => {
     return (
         <>
-
             <div className="flex items-center justify-center p-12">
-
                 <div className="mx-auto w-full max-w-[550px]">
                     <Link to="/">
                         <img src={Logo} className=" w-13 h-18 mx-auto mb-6" alt="" />
@@ -117,17 +118,108 @@ const Booking = () => {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className='flex justify-between'>
                             <button
-                                className="w-full hover:shadow-form rounded-md bg-[#FF3230] py-3 px-8 text-center text-base font-semibold text-white outline-none"
+                                className="w-[40%] hover:shadow-form rounded-md border-2  border-[#FF3230] bg-white py-3 px-8 text-center text-base font-semibold text-gray-900 outline-none hover:bg-[#FF3230] hover:text-white"
+                            >
+                                <Link to='/Booking'>
+                                Pick time
+                                </Link>
+                            </button>
+
+                            <button
+                                className="w-[40%] hover:shadow-form rounded-md bg-[#FF3230] py-3 px-8 text-center text-base font-semibold text-white outline-none"
                             >
                                 Book Now
                             </button>
+
                         </div>
                     </form>
+
                 </div>
             </div>
         </>
+    );
+};
+
+
+
+const Booking = () => {
+    const daysInMonth = 10;
+    const businessHours = [
+        '08:00', '08:15', '08:30', '08:45',
+        '09:00', '09:15', '09:30', '09:45',
+        '10:00', '10:15', '10:30', '10:45',
+        '11:00', '11:15', '11:30', '11:45',
+        '12:00',
+        '17:00'
+    ];
+
+    const [selectedDay, setSelectedDay] = useState(null);
+    const [selectedTime, setSelectedTime] = useState(null);
+    const handleDayClick = (day: any) => {
+        setSelectedDay(day);
+        setSelectedTime(null);
+    };
+
+    const handleBookingSubmit = (formData: any) => {
+        // Handle the booking submission logic here
+        console.log('Booking form submitted with data:', formData);
+        // Reset the state after submission
+        setSelectedDay(null);
+        setSelectedTime(null);
+    };
+
+    const handleTimeClick = (time: any) => {
+        setSelectedTime(time);
+    };
+
+    let currentMonth: any = null;
+
+    return (
+        <div className="container desktop:mx-32 flex items-center justify-center min-h-screen">
+            <div className="text-center w-full">
+                <h1 className="text-3xl mt-12 font-semibold mb-4">Book available Time</h1>
+                <div className="flex tablet:mx-auto flex-wrap gap-4 overflow-y-auto">
+                    {Array.from({ length: daysInMonth }, (_, index) => {
+                        const date = new Date();
+                        date.setDate(date.getDate() + index);
+                        const formattedDate = date.toDateString();
+                        const month = date.getMonth();
+
+                        if (month !== currentMonth) {
+                            currentMonth = month;
+                            return (
+                                <div key={`month-${month}`} className="w-full mt-4">
+                                    <h2 className="text-2xl text-left font-semibold mb-2">{date.toLocaleString('en-US', { month: 'long' })}</h2>
+                                </div>
+                            );
+                        }
+
+                        return (
+                            <div key={formattedDate} className={`w-full tablet:w-1/3 desktop:w-1/6 border p-4 ${selectedDay === formattedDate ? 'bg-blue-500 text-white' : ''}`}>
+                                <div className="font-bold mb-2 p-4 border-r-8 tablet:border-r-0 tablet:border-b-8 lg:border-b-0 lg:border-r-8 bg-[#FFF5F5]">
+                                    {formattedDate}
+                                </div>
+                                <div className="flex flex-wrap gap-2 h-40 overflow-x-auto">
+                                    {businessHours.map((time) => (
+                                        <button
+                                            key={time}
+                                            className={`px-2 py-2 rounded-lg border-2 border-[#b66f6d] ${selectedTime === time ? 'bg-[#FF3230] text-gray-100' : 'hover:bg-[#FF3230] hover:border-0 hover:text-gray-100'}`}
+                                            onClick={() => handleTimeClick(time)}
+                                        >
+                                            <Link to="/booking-form">
+                                                {time}
+                                            </Link>
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+        </div>
     );
 };
 
