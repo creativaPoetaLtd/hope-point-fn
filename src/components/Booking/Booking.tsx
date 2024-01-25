@@ -122,8 +122,8 @@ export const BookingForm = () => {
                             <button
                                 className="w-[40%] hover:shadow-form rounded-md border-2  border-[#FF3230] bg-white py-3 px-8 text-center text-base font-semibold text-gray-900 outline-none hover:bg-[#FF3230] hover:text-white"
                             >
-                                <Link to='/Booking'>
-                                Pick time
+                                <Link to='/booking'>
+                                    Pick time
                                 </Link>
                             </button>
 
@@ -155,20 +155,9 @@ const Booking = () => {
         '17:00'
     ];
 
-    const [selectedDay, setSelectedDay] = useState(null);
+    const [selectedDay] = useState(null);
     const [selectedTime, setSelectedTime] = useState(null);
-    const handleDayClick = (day: any) => {
-        setSelectedDay(day);
-        setSelectedTime(null);
-    };
 
-    const handleBookingSubmit = (formData: any) => {
-        // Handle the booking submission logic here
-        console.log('Booking form submitted with data:', formData);
-        // Reset the state after submission
-        setSelectedDay(null);
-        setSelectedTime(null);
-    };
 
     const handleTimeClick = (time: any) => {
         setSelectedTime(time);
